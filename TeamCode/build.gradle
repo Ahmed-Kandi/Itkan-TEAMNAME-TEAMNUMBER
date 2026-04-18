@@ -23,7 +23,12 @@ android {
     }
 }
 
+repositories {
+    maven { url 'https://maven.pedropathing.com/' }
+}
+
 dependencies {
     implementation project(':FtcRobotController')
     implementation 'com.arcrobotics.ftclib:core:2.1.1'
+    implementation 'com.pedropathing:pedro:1.0.6'
 }
